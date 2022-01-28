@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>notas</title>
+</head>
+<body>
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">nome</th>
+            <th scope="col">nota 1</th>
+            <th scope="col">nota 2</th>
+            <th scope="col">nota 3</th>
+            <th scope="col">nota 4</th>
+            <th scope="col">media</th>
+            <th scope="col">nota </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td> <input id="nota1" type="number" value="0" min="0.0" max="10.0"  onchange="calcula_media(0)"/> </td>
+            <td> <input id="nota2" type="number" value="0" min="0.0" max="10.0"  onchange="calcula_media(0)"/> </td>
+            <td> <input id="nota3" type="number" value="0" min="0.0" max="10.0"  onchange="calcula_media(0)"/> </td>
+            <td> <input id="nota4" type="number" value="0" min="0.0" max="10.0"  onchange="calcula_media(0)"/> </td>
+            <td><div id="media">00.0</div> </td>" 
+            <td id="ap"></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td ><input id="nota1" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(1)"/> </td>
+            <td ><input id="nota2" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(1)"/> </td>
+            <td ><input id="nota3" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(1)"/> </td>
+            <td ><input id="nota4" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(1)"/> </td>
+            <td><div id="media">00.0</div></td>
+            <td id="ap"></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry the Bird</td>
+            <td><input id="nota1" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><input id="nota2" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><input id="nota3" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><input id="nota4" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><div id="media">00.0</div></td>
+            <td id="ap"></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>lira</td>
+            <td><input id="nota1" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><input id="nota2" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><input id="nota3" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><input id="nota4" type="number" value="0" min="0.0" max="10.0" onchange="calcula_media(2)"/></td>
+            <td><div id="media">00.0</div></td>
+            <td id="ap"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    <script src="./js/index.js"></script>
+</body>
+</html>
